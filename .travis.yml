@@ -1,0 +1,26 @@
+language: node_js
+node_js:
+- 14.17.0
+
+cache: npm
+
+# before install:
+install: 
+- npm ci
+
+# before script:
+
+script:
+# - npm test
+# - npm run build
+- echo "run web chat"
+
+# deploy:
+#  provider: gae
+#   keyfile: "YOUR SERVICE ACCOUNT JSON FILE"
+#   project: "YOUR PROJECT ID"
+# skip-cleanup: true
+# github-token: $GITHUB_TOKEN
+# local_dir: build
+# on:
+#   all branch: 
